@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Flux Planner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- @todo: fill with your company info or remove -->
+<meta name="description" content="">
+<meta name="author" content="Themelize.me">
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Plugins -->
+<link href="plugins/animate/animate.css" rel="stylesheet">
+<link href="plugins/flexslider/flexslider.css" rel="stylesheet">
+<link href="plugins/clingify/clingify.css" rel="stylesheet">
+
+<!-- Theme style -->
+<link href="css/theme-style.css" rel="stylesheet">
+
+<!--Your custom colour override-->
+<link href="#" id="colour-scheme" rel="stylesheet">
+
+<!-- Your custom override -->
+<link href="css/custom-style.css" rel="stylesheet">
+
+<!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+<!--[if lt IE 9]>
+      <script src="plugins/html5shiv/dist/html5shiv.js"></script>
+      <script src="plugins/respond/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+<link rel="shortcut icon" href="img/icons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+<link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Rambla|Calligraffitti' rel='stylesheet' type='text/css'>
+
+<!--Retina.js plugin - @see: http://retinajs.com/-->
+<script src="plugins/retina/js/retina-1.1.0.min.js"></script>
+</head>
+
+<body class="page page-index">
+<a href="#content" class="sr-only">Skip to content</a>
+<div id="navigation" class="wrapper">
+  <div class="navbar-static-top">
+
+    <!--Hidden Header Region-->
+    <div class="header-hidden">
+      <div class="header-hidden-inner container">
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <h3>About Us</h3>
+			<p>We are a company set out to make life just a little bit easier. We're founded by people who have worked in the service industry so we know the struggles</p>
+          	<p>We can help you organize all of your work related aspects so you can focus more on enjoying life.</p>
+            <a href="about.htm" class="btn btn-sm btn-primary">Find out more</a> </div>
+          <div class="col-sm-4 col-md-4">
+            <!--@todo: replace with company contact details-->
+            <h3>Contact Us</h3>
+            <address>
+            <p><abbr title="Phone"><i class="icon-phone"></i></abbr> 514-893-4522</p>
+            <p><abbr title="Email"><i class="icon-envelope"></i></abbr>fluxplanner@gmail.com</p>
+            <p><abbr title="Address"><i class="icon-home"></i></abbr> Montreal, Canada, H8Z 2X7.</p>
+            </address>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <!--Colour Switch for demo - @todo: remove in production-->
+            <div class="colour-switcher">
+              <h3>Choose a Colour</h3>
+              <a href="#green" class="green active" data-toggle="tooltip" data-placement="bottom" data-original-title="Green (Default)">Green</a> <a href="#red" class="red" data-toggle="tooltip" data-placement="bottom" data-original-title="Red">Red</a> <a href="#blue" class="blue" data-toggle="tooltip" data-placement="bottom" data-original-title="Blue">Blue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Header & Branding region-->
+    <div class="header">
+      <div class="header-inner container">
+        <div class="row">
+          <div class="col-md-8">
+            <!--branding/logo-->
+            <a class="navbar-brand" href="index.htm" title="Home">
+            <h1><span>Flux</span>Planner<span>.</span></h1>
+            </a>
+            <div class="slogan">Your Work. Your Community</div>
+          </div>
+
+          <!--header rightside-->
+          <div class="col-md-4">
+            <!--social media icons-->
+            <div class="social-media">
+              <!--@todo: replace with company social media details-->
+              <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-facebook"></i></a> <a href="#"><i class="icon-linkedin"></i></a> <a href="#"><i class="icon-google-plus"></i></a> </div>
+          </div>
+        </div>
+        <div id="header-hidden-link"> <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden"><i></i>Open</a> </div>
+      </div>
+    </div>
+    <div class="container" data-toggle="clingify">
+      <div class="navbar">
+
+        <!--
+      mobile collapse menu button
+      - data-toggle="toggle" = default BS menu
+      - data-toggle="jpanel-menu" = jPanel Menu
+      -->
+        <a class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+
+        <!--user menu-->
+        <div class="btn-group user-menu pull-right"> <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a> <a href="#login-modal" class="btn btn-primary dropdown-toggle login" data-toggle="modal">Login</a> </div>
+
+        <!--everything within this div is collapsed on mobile-->
+        <div class="navbar-collapse collapse">
+
+          <!--main navigation-->
+          <ul class="nav" id="main-menu">
+            <li class="home-link"><a href="index.htm"><i class="icon-home"></i><span class="hidden">Home</span></a></li>
+            <li class="dropdown"><a href="features.htm" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Features +</a>
+              <!-- Dropdown Menu - Mega Menu -->
+              <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
+                <li class="mega-menu-wrapper" role="menuitem"> <span class="menu-title">Check out all our features!</span>
+                  <ul class="row list-unstyled" role="menu">
+                    <li class="col-md-6" role="menuitem"> <a href="features.htm" class="img-link"><img src="img/features/feature-3.png" alt="Feature 1" /></a> <a href="features.htm" tabindex="-1" class="menu-item">Employees</a> <span>Check out the features that can help the face of the service industry! We've all worked part-time jobs so we know the struggles. We now have the solution.</span> </li>
+                    <li class="col-md-6" role="menuitem"> <a href="features1.htm" class="img-link"><img src="img/features/feature-2.png" alt="Feature 2" /></a> <a href="features1.htm" tabindex="-1" class="menu-item">Management</a> <span>Whether you want to manage your employees, or organize your work efficiently. We have all the tools you need to get it all done!</span> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="pricing.htm" class="menu-item">Pricing</a></li>
+            <li class="dropdown"> <a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown">About +</a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+                <li role="menuitem"><a href="about.htm" tabindex="-1" class="menu-item">About Us</a></li>
+                <li role="menuitem"><a href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"> <a href="my/index.html" class="menu-item">Try it out!</a></li>
+            <li class="dropdown"><a href="pages.htm" class="dropdown-toggle" id="pages-drop" data-toggle="dropdown">More +</a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu pull-left" role="menu" aria-labelledby="pages-drop">
+                <li role="menuitem"><a href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
+                <li role="menuitem"><a href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+<div class="container">
+   <div class="row">
+      <h2 class="title-divider"><span>Terms <span class="de-em">and Conditions</span></span></h2>
+   		<h4>Flux Planner Terms and Conditions ("Agreement")</h4>
+		<p>This Agreement was last modified on November 26, 2013.</p>
+
+		<p>Please read these Terms and Conditions ("Agreement", "Terms and Conditions") carefully before using http://www.fluxplanner.com ("the Site") operated by Solutions Flux S.E.N.C. ("us", "we", or "our"). This Agreement sets forth the legally binding terms and conditions for your use of the Site at http://www.fluxplanner.com.</p>
+		<p>By accessing or using the Site in any manner, including, but not limited to, visiting or browsing the Site or contributing content or other materials to the Site, you agree to be bound by these Terms and Conditions. Capitalized terms are defined in this Agreement.</p>
+
+		<p><strong>Intellectual Property</strong><br />The Site and its original content, features and functionality are owned by Solutions Flux S.E.N.C. and are protected by international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws.</p>
+
+		<p><strong>Termination</strong><br />We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with you. All provisions of this Agreement that by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+
+		<p><strong>Links To Other Sites</strong><br />Our Site may contain links to third-party sites that are not owned or controlled by Solutions Flux S.E.N.C..</p>
+		<p>Solutions Flux S.E.N.C. has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services. We strongly advise you to read the terms and conditions and privacy policy of any third-party site that you visit.</p>
+
+		<p><strong>Governing Law</strong><br />This Agreement (and any further rules, polices, or guidelines incorporated by reference) shall be governed and construed in accordance with the laws of Quebec, Canada, without giving effect to any principles of conflicts of law.</p>
+
+		<p><strong>Changes To This Agreement</strong><br />We reserve the right, at our sole discretion, to modify or replace these Terms and Conditions by posting the updated terms on the Site. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms and Conditions.</p>
+		<p>Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Site or discontinue any use of the Site immediately.</p>
+
+		<p><strong>Contact Us</strong><br />If you have any questions about this Agreement, please contact us.</p>
+		<p style="font-size: 85%; color: #999;">Published and generated with permission from <a href="http://termsfeed.com/terms-conditions/generator/" style="color: #999; text-decoration: none;">www.termsfeed.com</a>.</p>
+   </div>
+</div>
+</div>
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col">
+        <div class="block contact-block">
+          <!--@todo: replace with company contact details-->
+          <h3>Contact Us</h3>
+          <address>
+          <p><abbr title="Phone"><i class="icon-phone"></i></abbr> 514-893-4522</p>
+          <p><abbr title="Email"><i class="icon-envelope"></i></abbr> fluxplanner@gmail.com</p>
+          <p><abbr title="Address"><i class="icon-home"></i></abbr> Montreal, Canada. H8Z 2X7.</p>
+          </address>
+        </div>
+      </div>
+      <div class="col-md-5 col">
+        <div class="block">
+          <h3>About Us</h3>
+          <p>We are a company set out to make life just a little bit easier. We're founded by people who have worked in the service industry so we know the struggles</p>
+          <p>We can help you organize all of your work related aspects so you can focus more on enjoying life.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col">
+        <div class="block newsletter">
+          <h3>Newsletter</h3>
+          <p>Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+          <!--@todo: replace with mailchimp code-->
+          <form role="form">
+            <div class="input-group input-group-sm">
+              <label class="sr-only" for="email-field">Email</label>
+              <input type="text" class="form-control" id="email-field" placeholder="Email">
+              <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Go!</button>
+              </span> </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="toplink"><a href="#top" class="top-link" title="Back to top">Back To Top <i class="icon-chevron-up"></i></a></div>
+      <!--@todo: replace with company copyright details-->
+      <div class="subfooter">
+        <div class="col-md-6">
+          <p><a href="#">Flux Solutions</a> | Copyright 2013 &copy; Solutions Flux S.E.N.C.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline footer-menu">
+            <li><a href="terms.htm">Terms</a></li>
+            <li><a href="#privacy-modal">Privacy</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude">
+  <!--@modal - signup modal-->
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form action="signup.htm" role="form">
+            <h5>Price Plan</h5>
+            <select class="form-control">
+              <option>Basic</option>
+              <option>Plus</option>
+              <option>Biz</option>
+              <option>Biz Plus</option>
+              <option>Custom Plan</option>
+            </select>
+            <h5>Account Information</h5>
+            <div class="form-group">
+              <label class="sr-only" for="signup-first-name">First Name</label>
+              <input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-last-name">Last Name</label>
+              <input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-username">Userame</label>
+              <input type="text" class="form-control" id="signup-username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-email">Email address</label>
+              <input type="email" class="form-control" id="signup-email" placeholder="Email address">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-password">Password</label>
+              <input type="password" class="form-control" id="signup-password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="term">
+                I agree with the <a href="terms.htm" target="_blank">Terms and Conditions</a>. </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer"> <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!--@modal - Mobile modal-->
+  <div class="modal fade" id="mobile-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Mobile Friendly</h4>
+        </div>
+        <div class="modal-body">
+		<h4>We give you access everywhere you need</h4>
+		<img src="img/features/mobile.png" width="100%" max-width="350px" />
+		<p>We have our mobile app for Android iPhone and soon to Windows Mobile, our website and mobile site. You can access what you need to, wherever you are.</p>
+		<p>In addition, we have push-notifications keeping you in the loop no matter your technology.</p>
+		<p>You can reply and get all your information via text, mobile app, or email. It doesn't matter what you've got as long as you're with us!</p>
+        </div>
+        <div class="modal-footer"> <small><a href="signup.htm">Sign up now!</a></small> || <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!--@modal - Schedule modal-->
+  <div class="modal fade" id="schedule-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Flux Planner</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Your day-to-day Planner</h4>
+		<img src="img/features/schedule-day.png" width="100%" max-width="379px" />
+		<p>Our Planner is a key component to our package. Whether you're an employee or part of management, our planner can make your life <strong>much</strong> easier.</p>
+		<h5><u>Employees</u></h5>
+		<p>It's through our Planner that you can be able to fully control your shifts.</p>
+		<p>We've worked in the service industry so we know the stress that can come from last minute changes. We make it incredibly easy to switch up your shifts</p>
+		<p><u>Here's how it works!</u></br>If you want to:</br>
+		<ul>
+		  <li><strong>Bid off</strong> a shift</li>
+		  <li><strong>Request</strong> a shift</li>
+		  <li><strong>Switch</strong> a shift</li>
+		  <li>Request a day off</li>
+		  <li>Or posting your availability</li>
+		</ul>
+		</p>
+		<p>Flux Planner makes it just a click away</p>
+		<p>Furthermore, Flux Planner gives you a notification for all replies and requests so you never have to worry. Also built into the Planner notifications are shift reminders so you always know when you have a shift</p>
+        <h5><u>Management</u></h5>
+        <p>For managers, Flux Planner is the ultimate tool in shift creation. You outline your shift rules such as the required workers per shift and required hours and Flux Planner narrows down your options. This makes your life a whole lot easier. You just drag and drop your available options into the timeslots, click save, and you're done!</p>
+		<p>You can choose to view each individuals schedule for the week or all your employees</p>
+		<h6><u>Mutual features</u></h6>
+		<p>The best part about Flux Planner is that it's so much more than just a work organizer. Life is stressful and keeping track of plans is rough. With our planner you can put all your events, meetings, deadlines and reminders all in one place right beside your work schedule</p>
+		<p><strong>New</strong> to Flux Planner is the ability to add your facebook events to your schedule so you have a central hub for all your important events</p>
+        </div>
+        <div class="modal-footer"> <small><a href="signup.htm">Sign up now!</a></small> || <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!--@modal - Customize modal-->
+  <div class="modal fade" id="customize-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Customize your station</h4>
+        </div>
+        <div class="modal-body">
+		<img src="img/features/feature-3.png" width="100%" />
+		<p>You get to customize what you see and how you see it.</p>
+		<p>From skins to arrangements, notifications to news feeds. We have a huge variety of components that you get to choose from, making it really <strong>your</strong> Flux Planner.</p>
+		<p>Privacy is a huge part of who we are. You get full control of what of yours people can see. From your profile page information, to your sales statistics, you can choose to bear it all or keep it private.</p>
+        </div>
+        <div class="modal-footer"> <small><a href="signup.htm">Sign up now!</a></small> || <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!--@modal - notification modal-->
+  <div class="modal fade" id="notification-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Notifications <span class="de-em">Anywhere</span></h4>
+        </div>
+        <div class="modal-body">
+		<img src="img/features/notifications.png" width="100%" max-width="350px" />
+		<p>Flux Planner has a large variety of notifications, all of which you control. If you like to stay notified, select all our features and you'll always be in the loop for whatever goes on. On the otherhand, if you like to keep work at work and only receive those truly important updates, that flies with us too!</p>
+		<p>It's these small but powerful features that make our product perfect for absolutely anyone.</p>
+        </div>
+        <div class="modal-footer"> <small><a href="signup.htm">Sign up now!</a></small> || <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!--@modal - Social modal-->
+  <div class="modal fade" id="news-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Social Hub</h4>
+        </div>
+        <div class="modal-body">
+		<h4>Keep all of your information in one place</h4>
+		<img src="img/features/social.png" width="100%" max-width="300px" />
+		<p>Whether it's through our Flux App, our website, or any other means of accessing Flux Planner, you can keep all of your social medias in one place</p>
+		<p>Flux Planner not only releives all of your stress from work by giving you the tools you need, but we also keep all your Facebook news updates, Twitter updates, and Instagram photos all in one place. You can read, post, and communicate through Flux Planner to all of your social medias.</p>
+		<p>Flux Planner always keeps you in the know!</p>
+        </div>
+        <div class="modal-footer"> <small><a href="signup.htm">Sign up now!</a></small> || <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!--@modal - login modal-->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form action="login.htm" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="login-email">Email</label>
+              <input type="email" id="login-email" class="form-control email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="login-password">Password</label>
+              <input type="password" id="login-password" class="form-control password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small><br />
+          <small><a href="#">Forgotten password?</a></small> </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+</div>
+
+<!--Scripts -->
+<script src="js/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!--Legacy jQuery support for quicksand plugin-->
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--JS plugins-->
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script>
+<script src="plugins/clingify/jquery.clingify.min.js"></script>
+<script src="plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script>
+<script src="plugins/jRespond/js/jRespond.js"></script>
+<script src="plugins/quicksand/jquery.quicksand.js"></script>
+
+<!--Custom scripts mainly used to trigger libraries -->
+<script src="js/script.js"></script>
+</body>
+</html>
